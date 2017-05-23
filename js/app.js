@@ -16,10 +16,12 @@ function getRandomCard() {
   console.log(hand.reduce(getSum));
   console.log(hand);
 
+  // Sort cards from low - high
   hand.sort(function(a, b){
     return a - b;
   });
 
+  // Replace "," with " | "
   return hand.join(',').replace(/,/g, ' | ').split().sort();
 }
 
