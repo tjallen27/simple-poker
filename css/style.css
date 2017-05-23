@@ -1,7 +1,7 @@
 body {
   padding-top: 50px;
   text-align: center;
-  font-family: 'Playfair Display', serif;
+    font-family: 'Luckiest Guy', cursive;
 background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   background-size: contain;
   height: 100vh;
@@ -22,7 +22,7 @@ background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 
 #dealCards {
   position: absolute;
-  top: 20%;
+  top: 25%;
   transform: translateX(-50%);
   padding: 30px;
   font-size: 2em;
@@ -62,4 +62,10 @@ background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 #scorePlayer,
 #scoreComputer {
   font-size: 2.5em;
+}
+
+.winner-text {
+
+  font-size: 2em;
+  letter-spacing: 5px;
 }

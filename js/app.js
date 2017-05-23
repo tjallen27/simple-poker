@@ -49,6 +49,7 @@ function specialCards (randomNumber){
 }
 
 function playGame () {
+  $('.winner-text').html(' ');
 
     //get card numbers
   let player = getRandomCard(),
@@ -94,6 +95,17 @@ function playGame () {
   } else {
     document.getElementById('scoreComputer').style.color = 'green';
     document.getElementById('scorePlayer').style.color = 'red';
+  }
+
+  if(scorePlayer === 10 && scorePlayer > scoreComputer ){
+    scorePlayer = 0;
+    scoreComputer = 0;
+    $('.winner-text').html('<h1>Player 1 Wins!</h1>');
+
+  } else if(scoreComputer === 10 && scoreComputer > scorePlayer  ) {
+    scorePlayer = 0;
+    scoreComputer = 0;
+    $('.winner-text').html('<h1>Player 2 Wins!</h1>');
   }
 }
 
