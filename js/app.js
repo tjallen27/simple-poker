@@ -25,9 +25,9 @@ function getRandomCard() {
   return hand.join(',').replace(/,/g, ' | ').split().sort();
 }
 
+// **** NOT WORKING **** //
 function specialCards (randomNumber){
   let card;
-
   // set: 1-Ace, 12-Jack, 13-Queen, 14-King
   switch (randomNumber){
     case 12:
